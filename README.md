@@ -1,17 +1,14 @@
 [![License][license-image]][license-url]
 
-# CppProjectTemplate
-C++ project template
+# Radar
+The program for displaying objects detected by radar 
 
 ## Build project
-`cmake -B build -DCMAKE_BUILD_TYPE=Debug -DFIND_MODULES=ON -DFIND_CONAN=ON -DFIND_TESTS=ON -DENABLE_TIDY=ON`
+`git submodule update --init --recursive`
+
+`cmake -B build -DCMAKE_BUILD_TYPE=Debug -DFIND_MODULES=ON -DFIND_CONAN=ON`
 
 `cmake --build build/ -j4`
-
-## Run tests
-`cd build`
-
-`ctest`
 
 ## Related project
 [Cmake scripts for build c++ projects](https://github.com/nicledomaS/cmake/blob/master/README.md)
