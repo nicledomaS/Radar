@@ -6,7 +6,7 @@ The program for displaying objects detected by radar
 ## Build project
 `git submodule update --init --recursive`
 
-`cmake -B build -DCMAKE_BUILD_TYPE=Debug -DFIND_MODULES=ON -DFIND_CONAN=ON`
+`cmake -B build -DCMAKE_BUILD_TYPE=Debug -DFIND_MODULES=ON`
 
 `cmake --build build/ -j4`
 
