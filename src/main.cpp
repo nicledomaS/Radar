@@ -56,6 +56,11 @@ int main (int argc, char** argv)
         while(true)
         {
             std::this_thread::sleep_for(std::chrono::seconds(1));
+
+            if(x1 > 100 && y2 < 0)
+            {
+                break;
+            }
             x1 += 5;
             y1 += 5;
 
@@ -66,7 +71,6 @@ int main (int argc, char** argv)
             {
                 auto obj1 = new Object(std::to_string(id1).data(), x1, y1, State::Lost);
                 storage->updateRealtimeTrack(obj1);
-                break;
             }
             else
             {
