@@ -71,9 +71,10 @@ Row {
         height: parent.height
         ListView {
             id: objectList
+            anchors.fill: parent
             model: ListModel {}
             delegate: Rectangle {
-                anchors.fill: parent
+                height: 20
                 CheckBox {
                     text: id
                     checked: true
@@ -83,6 +84,8 @@ Row {
                     }
                 }
             }
+            highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
+            focus: true
         }
     }
 }

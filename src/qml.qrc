@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>qml/main.qml</file>
         <file>qml/RadarView.qml</file>
+        <file>qml/ArchiveView.qml</file>
+        <file>qml/DatePikerField.qml</file>
     </qresource>
 </RCC>

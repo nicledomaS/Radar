@@ -1,9 +1,8 @@
 #include "RealTimeObjectModel.h"
-
-#include <QScatterSeries>
+#include "Object.h"
 
 RealTimeObjectModel::RealTimeObjectModel(QObject *parent)
-    : ChartViewController(parent)
+    : QObject(parent)
 {
 }
 

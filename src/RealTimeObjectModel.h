@@ -1,19 +1,21 @@
 #pragma once
+#include <QObject>
 
-#include "ChartViewController.h"
+struct Object;
 
-#include <QString>
-#include <QMap>
-
-class RealTimeObjectModel: public ChartViewController
+class RealTimeObjectModel: public QObject
 {
-public slots:
+    Q_OBJECT
+public:
     RealTimeObjectModel(QObject *parent = nullptr);
 
+public slots:
     void add(const Object* object);
     void update(Object* object);
     void remove(const Object* object);
 
-private:
-    QMap<QString, QAbstractSeries*> points;
+signals:
+    void addSeries(const Object* object);
+    void updateSeries(const Object* object);
+    void removeSeries(const Object* object);
 };

@@ -31,6 +31,10 @@ Window  {
                 id: radar_view_tab
                 RadarView {}
             }
+            Item {
+                id: archive_view_tab
+                ArchiveView {}
+            }
         }
     }
 }
