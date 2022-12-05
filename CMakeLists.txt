@@ -22,7 +22,7 @@ if(UNIX)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -g -Wall")
 endif()
 
-find_package(Qt6)
+find_package(Qt${QT_VERSION_MAJOR})
 
 executable(${PROJECT_NAME}
             SOURCES "src/"
